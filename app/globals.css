@@ -10,7 +10,7 @@
         background-position: center center;
     }
     .container {
-        @apply mx-auto pl-2 md:pl-0;
+        @apply mx-auto pl-2 xl:pl-0;
     }
     /* Hamburger Icon/Menu */
     .hamburger {
