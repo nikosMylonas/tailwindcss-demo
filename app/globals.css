@@ -10,7 +10,7 @@
         background-position: center center;
     }
     .container {
-        @apply mx-auto pl-2;
+        @apply mx-auto pl-2 md:pl-0;
     }
     /* Hamburger Icon/Menu */
     .hamburger {
@@ -58,7 +58,7 @@
     }
     /* grid system */
     .col-custom {
-        @apply grid gap-4 auto-rows-fr;
+        @apply grid gap-6 md:gap-4 xl:gap-6 auto-rows-fr;
     }
     .col-3 {
         @apply grid-cols-3;

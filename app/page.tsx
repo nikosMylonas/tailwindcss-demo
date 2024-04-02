@@ -1,12 +1,14 @@
-// import Image from 'next/image';
+import Image from 'next/image';
+import Link from 'next/link';
+import img from '../public/img/ancient-temple-1.jpg';
 
 export default function Home() {
     return (
-        <main className="py-8 mt-20">
+        <main className="py-8 mt-20 mr-2 lg:mr-0">
             <div className="container">
                 {/* Hero section 1 */}
                 <section>
-                    <div className="col-custom col-1 md:col-2 lg:col-3 mr-2 lg:mr-0">
+                    <div className="col-custom col-1 md:col-2 lg:col-3">
                         <div className="w-full bg-slate-100 rounded-lg">
                             <div className="card-a">
                                 <div className="flex flex-col gap-16 content-between">
@@ -23,19 +25,19 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="flex justify-center mb-4">
-                                        <a
+                                        <Link
                                             href="#"
                                             className="text-white bg-seaGreen rounded-md p-4 align-middle no-underline hover:text-white hover:opacity-80 hover:transition hover:duration-300"
                                         >
                                             Read more...
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="w-full bg-slate-100 rounded-lg">
                             <div className="card-a">
-                                <div className="flex flex-col gap-16  content-between">
+                                <div className="flex flex-col gap-16 content-between">
                                     <div>
                                         <h2 className="text-left md:text-center">
                                             Safe
@@ -49,12 +51,12 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="flex justify-center mb-4">
-                                        <a
+                                        <Link
                                             href="#"
                                             className="text-white bg-seaGreen rounded-md p-4 align-middle no-underline hover:text-white hover:opacity-80 hover:transition hover:duration-300"
                                         >
                                             Read more...
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -77,12 +79,12 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="flex justify-center mb-4">
-                                            <a
+                                            <Link
                                                 href="#"
                                                 className="text-white bg-seaGreen rounded-md p-4 align-middle no-underline hover:text-white hover:opacity-80 hover:transition hover:duration-300"
                                             >
                                                 Read more...
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -103,12 +105,12 @@ export default function Home() {
                                 tailor-made for modern digital product teams.
                             </p>
                             <div className="flex justify-center lg:justify-start w-full">
-                                <a
+                                <Link
                                     href="#"
                                     className="bg-seaGreen w-32 self-center lg:self-start rounded-md text-center p-4 hover:opacity-80 hover:transition hover:duration-300 text-white no-underline hover:text-white "
                                 >
                                     Get Started
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/* numbered list */}
@@ -202,10 +204,10 @@ export default function Home() {
                         <article>
                             <div className="flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-8">
                                 <div className="w-full pr-2 mb-4 lg:w-2/6 lg:mb-0">
-                                    <img
-                                        className="shadow-lg shadow-slate-800/50"
-                                        src="./img/ancient-temple-1.jpg"
+                                    <Image
+                                        src={img}
                                         alt="temple"
+                                        className="shadow-lg shadow-slate-800/50"
                                     />
                                 </div>
                                 <div className="w-full lg:w-4/6 lg:px-4">
@@ -224,13 +226,13 @@ export default function Home() {
                                         praesentium.
                                     </p>
                                     <p>
-                                        <a
+                                        <Link
                                             className="hover:text-seaGreen"
                                             href="https://freecodecamp.org"
                                             target="_blank"
                                         >
                                             This is an anchor
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </div>
@@ -268,7 +270,7 @@ export default function Home() {
                 <section>
                     <h1>Contact Us</h1>
                     <form action="" method="post">
-                        <div className="flex flex-col space-y-4 lg:flex-row lg:space-x-32 lg:space-y-0">
+                        <div className="flex flex-col space-y-4 lg:flex-row lg:space-x-24 xl:space-x-36 lg:space-y-0">
                             <div>
                                 <label htmlFor="name">Name:</label>
                                 <input
