@@ -11,7 +11,7 @@ export default function Footer() {
                     Rights Reserved
                 </div>
                 <div className="italic text-xl font-light md:pr-2">
-                    ...Always on your side
+                    ...Lorem ipsum dolor sit
                 </div>
             </div>
         </footer>
